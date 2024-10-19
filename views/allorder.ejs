@@ -1,0 +1,22 @@
+<%- include("includes/head.ejs") %>
+<body>
+    <div class="allorder-div">
+        <h2 class="allorder-heading">All order page</h2>
+    </div>
+    <% for( let order of orders ) { %>
+        <div class="all-order">
+            <p>Item: <%= order.prname %></p>
+            <p>quantity: <%= order.prquantity %></p>
+            <p>price: <%= order.prprice %></p>
+            <div class="customer">
+                <p class="order-name">name: <%= order.name %></p>
+            </div>
+            <p>contact: <%= order.contect %></p>
+            <form action="/buy/order/<%= order._id %>">
+                <button class="btn btn-primary">delete</button>
+            </form>
+        </div>
+    <% } %>
+    
+</body>
+</html>

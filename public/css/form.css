@@ -1,0 +1,91 @@
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.navbar{
+    position: fixed;
+    width: 100vw;
+}
+.search{
+    position: absolute;
+    right: 20px;
+}
+.main{
+    background-color:#344a72;
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+   width: 100vw;
+}
+h1{
+    text-align: center;
+    margin-top: 15px;
+
+}
+form{
+    width: 300px;
+    margin: auto;
+}
+form label{
+    display: flex;
+    margin-top: 15px;
+    font-size: 18px;
+}
+input{
+    width: 100%;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+}
+.al{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+}
+.login{
+    
+    width: 360px;
+    height: 280px;
+    background-color: white;
+    /* margin: auto; */
+    border-radius: 5px; 
+}
+
+.btn-login{
+    font-size: large;
+    color: white;
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    height: 30px;
+    background-color: green;
+    width: 100%;
+}
+.btn-login:hover{
+    background-color: black;
+}
+.bt{
+    background-color: green;
+    color: white;
+}
+.bt:hover{
+    background-color: black;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      height: 93vh;
+    }
+    .search{
+        position: relative;
+        left: -20px;
+    }
+    .main{
+        height: 100%;
+    }
+  }
+  

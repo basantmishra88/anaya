@@ -1,0 +1,52 @@
+<%- include("includes/head.ejs") %>
+
+    <body>
+        <%- include("includes/navbar.ejs") %>
+            <div class="main">
+                <div class="mangal">
+                    <img src="https://res.cloudinary.com/dnpo4lrgl/image/upload/v1729328387/ph9_l2oabv.png" alt="mangal">
+                </div>
+                <div class="main-text">
+                    
+                    <div>
+                        <h1><span class="tr-item">Trusted Item</span> at your</h1>
+                        <h1>Door in 2 Hours.</h1>
+                    </div>
+                    <div class="mt-5">
+                        <button class="btn btn-primary trust">any Quary</button>
+                        <button class="btn btn-dark trust trust-black">9718788545</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-page">
+                <div class="row">
+                    <% for( product of products ) { %>
+                        <div class="col sm">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="<%= product.image %>" alt="image">
+                                </div>
+                                <div class="product-text">
+                                    <div class="under-text">
+                                        <span>name : <%= product.name %></span>
+                                     <br>
+                                     <span>quantity : <%= product.quantity %></span>  
+                                     <br>                 
+                                     <span>Price : <%= product.price %></span>
+                                    </div>
+                                    <form action="/buy/<%= product._id %>">
+                                        <button class="btn btn-primary order-btn">order</button>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                        <% } %>
+                </div>
+            </div>
+            <%- include("includes/footer.ejs") %>
+    </body>
+
+    </html>

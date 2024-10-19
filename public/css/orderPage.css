@@ -1,0 +1,64 @@
+.orderPage{
+    padding-top: 70px;
+    /* width: 100vw; */
+    height: 100vh;
+    background-color:#77CDFF;
+}
+.order-c{
+    background-color: #ffff;
+    width: 30%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    font-weight: 600;
+
+}
+.order-c-img{
+    width: 100%;
+    height: 50%;
+}
+.order-c-img img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 300px;
+}
+.bo-in{
+    border: 1px solid black;
+    height: 30px;
+    width: 95%;
+    margin: 10px auto 0 auto;
+}
+
+.dis{
+    margin-left: 50%;
+}
+.col-i input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.order-bt{
+    outline: none;
+    margin-top: 8px;
+    display: block;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    font-size: large;
+}
+@media only screen and (max-width: 600px) {
+    .orderPage{
+        width: 105%;
+    }
+    .order-c{
+        width: 90%;
+    }
+    .dis{
+       margin-left: 40%;
+    }
+    .col-i input{
+        width: 50%;
+    }
+
+
+}

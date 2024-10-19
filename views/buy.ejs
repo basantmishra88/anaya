@@ -1,0 +1,45 @@
+<%- include("includes/head.ejs") %>
+<body>
+    <%- include("includes/navbar.ejs") %>
+
+    <div class="orderPage">
+    <form  method="post" action="/buy/order">
+        <div class="order-c">
+            <div class="order-c-img">
+                <img src="<%= product.image %>" alt="iamge">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="dis">Name :</span>
+                </div>
+                <div class="col col-i">
+                    <input type="text" name="prname" id="" value="<%= product.name %>" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="dis">Quantity :</span>
+                </div>
+                <div class="col col-i">
+                    <input type="text" name="prquantity" id="" value="<%= product.quantity %>" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="dis">Price :&#8377;</span>
+                </div>
+                <div class="col col-i">
+                    <input type="text" name="prprice" id="" value="<%= product.price %>" readonly>
+                </div>
+            </div>
+            <input type="name" class="form-control bo-in" id="exampleInputEmail1" name="name"
+            placeholder="your name" required>
+            <input type="number" class="form-control bo-in" id="exampleInputEmail1" name="contect"
+            placeholder="Mobile no" required>
+            
+            <button class="btn btn-primary order-bt">order continue</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
